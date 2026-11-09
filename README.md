@@ -1,4 +1,4 @@
-# WEBRAT - Domains and C2 Infrastructure
+# WEBRAT
 
 This repository contains the domains and C2 IP addresses of WEBRAT.
 
@@ -20,9 +20,21 @@ Feed the raw lists directly into your DNS filters, firewalls, or proxy setups.
 Import the IP addresses and domains into your security monitoring systems to hunt for active or historical connections.
 
 ```bash
-# Example: Download the latest domains list
+# Download the latest domains list
+curl -O https://githubusercontent.com
+
+# Download the latest C2 IPs list
 curl -O https://githubusercontent.com
 ```
+
+### Local Blocking (Hosts File)
+You can block these malicious domains on your local computer by mapping them to a loopback address (127.0.0.1) in your system hosts file.
+
+For Linux/macOS:
+Append the domains to `/etc/hosts`
+
+For Windows:
+Append the domains to `C:\Windows\System32\drivers\etc\hosts`
 
 ## Disclaimer
 
