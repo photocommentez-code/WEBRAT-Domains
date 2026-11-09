@@ -1,42 +1,29 @@
-```Webrat / SalatStealer Domains & InfrastructureThis repository contains a curated list of domains and IP addresses associated with Webrat (also known as SalatStealer / WEB_RAT) — a Go-based stealer/RAT distributed as MaaS.Domainstextwebrat.in
-webr.at
-webrat.ru
-webrat.top
-webrat.su
-webrat.es
-webrat.site
-webrat.org
-wrat.in
-salator.es
-wruser.org
-sa1atik.cn
-sa1at.cn
-salat.cn
-sa1at.ru
-websalat.top
-posholnahuy.ru
-pidorasina.ru
-nyash.team
-webratpanel.ton
-remoteadministratortool.ton
-shyetootval.ton
-webratxaye1.tonIP Addressestext141.95.112.163
-62.109.0.189
-85.198.98.75
-185.53.179.136
-31.77.15.211
-104.21.42.63
-172.67.201.250
-104.21.55.102
-172.67.147.118
-172.67.194.254
-104.21.60.88
-104.21.80.1Notes
-Panel paths commonly seen: /login/, /panel/, /alive.php
-C2 path often used: /sa1at
-Infrastructure frequently sits behind Cloudflare
-Domain rotation via health-check (/alive.php) and external lists
-Newer samples also abuse TON domains as fallback C2
-DisclaimerThis repository is for research and defensive purposes only.
+# WEBRAT - Domains and C2 Infrastructure
 
-Do not use the listed infrastructure for illegal activity.
+This repository contains the domains and C2 IP addresses of WEBRAT.
+
+It serves as an infrastructure log and threat intelligence feed for monitoring WEBRAT activity.
+
+## Repository Structure
+
+All threat indicators are located in the `domains/` directory:
+
+* domains/domains.txt — Tracked domains used by WEBRAT for hosting, payload delivery, or communication.
+* domains/IPs.txt — Command and Control (C2) server IP addresses.
+
+## Usage and Integration
+
+### Blocklists
+Feed the raw lists directly into your DNS filters, firewalls, or proxy setups.
+
+### SIEM / EDR Alerting
+Import the IP addresses and domains into your security monitoring systems to hunt for active or historical connections.
+
+```bash
+# Example: Download the latest domains list
+curl -O https://githubusercontent.com
+```
+
+## Disclaimer
+
+IMPORTANT: The infrastructure listed in this repository is malicious. Interacting with these endpoints carries inherent risks. Use this data strictly for defensive, educational, and authorized security research purposes.
