@@ -1,0 +1,1 @@
+# Add verified, authorized defensive indicators here, one IP address per line.
