@@ -21,10 +21,10 @@ Import the IP addresses and domains into your security monitoring systems to hun
 
 ```bash
 # Download the latest domains list
-curl -O https://githubusercontent.com
+curl -O https://github.com/photocommentez-code/WEBRAT-Domains/raw/refs/heads/main/domains/domains.txt
 
 # Download the latest C2 IPs list
-curl -O https://githubusercontent.com
+curl -O https://github.com/photocommentez-code/WEBRAT-Domains/raw/refs/heads/main/domains/IPs.txt
 ```
 
 ### Local Blocking (Hosts File)
