@@ -1,14 +1,14 @@
-# WEBRAT
+# Malware Domains - C2 Infrastructure Tracking
 
-This repository contains the domains and C2 IP addresses of WEBRAT.
+This repository contains tracked domains and C2 IP addresses associated with various malware operations.
 
-It serves as an infrastructure log and threat intelligence feed for monitoring WEBRAT activity.
+It serves as an infrastructure log and threat intelligence feed for security research, threat hunting, and defensive monitoring.
 
 ## Repository Structure
 
 All threat indicators are located in the `domains/` directory:
 
-* domains/domains.txt — Tracked domains used by WEBRAT for hosting, payload delivery, or communication.
+* domains/domains.txt — Tracked domains used for hosting, payload delivery, or communication.
 * domains/IPs.txt — Command and Control (C2) server IP addresses.
 
 ## Usage and Integration
@@ -21,10 +21,10 @@ Import the IP addresses and domains into your security monitoring systems to hun
 
 ```bash
 # Download the latest domains list
-curl -O https://github.com/photocommentez-code/WEBRAT-Domains/raw/refs/heads/main/domains/domains.txt
+curl -O https://githubusercontent.com
 
 # Download the latest C2 IPs list
-curl -O https://github.com/photocommentez-code/WEBRAT-Domains/raw/refs/heads/main/domains/IPs.txt
+curl -O https://githubusercontent.com
 ```
 
 ### Local Blocking (Hosts File)
