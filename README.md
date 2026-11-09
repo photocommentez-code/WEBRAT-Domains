@@ -6,10 +6,7 @@ It serves as an infrastructure log and threat intelligence feed for security res
 
 ## Repository Structure
 
-All threat indicators are located in the `domains/` directory:
-
-* domains/domains.txt — Tracked domains used for hosting, payload delivery, or communication.
-* domains/IPs.txt — Command and Control (C2) server IP addresses.
+All threat indicators are located in the project root directory.
 
 ## Usage and Integration
 
